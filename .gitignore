@@ -4,6 +4,9 @@ coverage/
 
 dist.zip
 *.zip
+.zip/
+*.crx
+*.pem
 *.log
 pnpm-debug.log*
 

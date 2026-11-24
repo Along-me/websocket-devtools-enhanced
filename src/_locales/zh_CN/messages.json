@@ -1088,15 +1088,15 @@
     "description": "Translation for popup.features.block.desc"
   },
   "popup_footer_homepage": {
-    "message": "主页",
+    "message": "原版官网（支持原作者）",
     "description": "Translation for popup.footer.homepage"
   },
   "popup_footer_support": {
-    "message": "如果喜欢的话请给我五星好评！",
+    "message": "支持原作者：为原版插件评分",
     "description": "Translation for popup.footer.support"
   },
   "popup_footer_github": {
-    "message": "GitHub",
+    "message": "增强版 GitHub 仓库",
     "description": "Translation for popup.footer.github"
   },
   "system_closeEvent_notice": {
@@ -1104,11 +1104,11 @@
     "description": "Translation for system.closeEvent.notice"
   },
   "simulate_animated_heartTooltip": {
-    "message": "如果你喜欢这个插件，请给我们5星好评～",
+    "message": "支持原作者：为原版插件评分",
     "description": "Translation for simulate.animated.heartTooltip"
   },
   "simulate_animated_githubTooltip": {
-    "message": "如果你喜欢这个插件，可以探索这个仓库～",
+    "message": "查看增强版 GitHub 仓库",
     "description": "Translation for simulate.animated.githubTooltip"
   },
   "panel_trafficPause_title": {

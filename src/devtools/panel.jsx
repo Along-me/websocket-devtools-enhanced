@@ -12,6 +12,7 @@ import { t, addLanguageChangeListener, getCurrentLanguage, initForPanel } from "
 import i18n from "../utils/i18n.js";
 import "../styles/main.css";
 import { Ban, AlertTriangle } from "lucide-react";
+import { UPSTREAM_WEBSITE } from "../utils/projectLinks.js";
 
 // Performance configuration
 const MAX_MESSAGES_PER_CONNECTION = 5000; // Max messages retained per connection
@@ -696,8 +697,9 @@ const WebSocketPanel = () => {
             <LanguageSelector />
             <button 
               className="extension-icon-panel"
+              title={t("popup.footer.homepage")}
               onClick={() => {
-                chrome.tabs.create({ url: "https://websocket-devtools.com" });
+                chrome.tabs.create({ url: UPSTREAM_WEBSITE });
               }}
               style={{
                 marginLeft: '8px',

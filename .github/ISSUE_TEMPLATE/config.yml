@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Security report
-    url: https://github.com/law-chain-hot/websocket-devtools/security/policy
+    url: https://github.com/Along-me/websocket-devtools-enhanced/security/policy
     about: Please report suspected vulnerabilities privately.

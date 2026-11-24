@@ -1,6 +1,6 @@
 {
   "name": "websocket-devtools",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Professional debugging tool with real-time monitoring, message simulation, and traffic interception for developers",
   "type": "module",
   "main": "index.js",
@@ -34,13 +34,13 @@
     "url": "https://github.com/law-chain-hot"
   },
   "license": "MIT",
-  "homepage": "https://github.com/law-chain-hot/websocket-devtools#readme",
+  "homepage": "https://github.com/Along-me/websocket-devtools-enhanced#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/law-chain-hot/websocket-devtools.git"
+    "url": "git+https://github.com/Along-me/websocket-devtools-enhanced.git"
   },
   "bugs": {
-    "url": "https://github.com/law-chain-hot/websocket-devtools/issues"
+    "url": "https://github.com/Along-me/websocket-devtools-enhanced/issues"
   },
   "packageManager": "pnpm@10.5.2",
   "engines": {

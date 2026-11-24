@@ -807,6 +807,62 @@
     "message": "Alle Nachrichten löschen",
     "description": "Translation for messageDetails.controls.clearMessages"
   },
+  "messageDetails_grouping_enable": {
+    "message": "Gruppieren",
+    "description": "Translation for messageDetails.grouping.enable"
+  },
+  "messageDetails_grouping_field": {
+    "message": "Feld",
+    "description": "Translation for messageDetails.grouping.field"
+  },
+  "messageDetails_grouping_value": {
+    "message": "Wert",
+    "description": "Translation for messageDetails.grouping.value"
+  },
+  "messageDetails_grouping_displayField": {
+    "message": "Anzeigen",
+    "description": "Translation for messageDetails.grouping.displayField"
+  },
+  "messageDetails_grouping_tooltip": {
+    "message": "Nachrichten nach JSON-Feld und optionalem exaktem Wert gruppieren",
+    "description": "Translation for messageDetails.grouping.tooltip"
+  },
+  "messageDetails_grouping_emptyValueHint": {
+    "message": "Wert leer lassen, um nach allen Feldwerten zu gruppieren",
+    "description": "Translation for messageDetails.grouping.emptyValueHint"
+  },
+  "messageDetails_grouping_other": {
+    "message": "Andere Nachrichten",
+    "description": "Translation for messageDetails.grouping.other"
+  },
+  "messageDetails_grouping_noField": {
+    "message": "Kein {{field}}",
+    "description": "Translation for messageDetails.grouping.noField"
+  },
+  "messageDetails_grouping_sort": {
+    "message": "Sortieren",
+    "description": "Translation for messageDetails.grouping.sort"
+  },
+  "messageDetails_grouping_sort_firstOutgoing": {
+    "message": "Erste gesendete",
+    "description": "Translation for messageDetails.grouping.sort.firstOutgoing"
+  },
+  "messageDetails_grouping_sort_firstMessage": {
+    "message": "Erste Nachricht",
+    "description": "Translation for messageDetails.grouping.sort.firstMessage"
+  },
+  "messageDetails_grouping_sort_latestMessage": {
+    "message": "Neueste Nachricht",
+    "description": "Translation for messageDetails.grouping.sort.latestMessage"
+  },
+  "messageDetails_grouping_sort_groupValue": {
+    "message": "Gruppenwert",
+    "description": "Translation for messageDetails.grouping.sort.groupValue"
+  },
+  "messageDetails_grouping_sort_messageCount": {
+    "message": "Nachrichtenanzahl",
+    "description": "Translation for messageDetails.grouping.sort.messageCount"
+  },
   "messageDetails_table_data": {
     "message": "Daten",
     "description": "Translation for messageDetails.table.data"
@@ -935,6 +991,14 @@
     "message": "Einfügen",
     "description": "Translation for common.paste"
   },
+  "common_rawData": {
+    "message": "Rohdaten",
+    "description": "Translation for common.rawData"
+  },
+  "common_binary": {
+    "message": "BINÄR",
+    "description": "Translation for common.binary"
+  },
   "common_cut": {
     "message": "Ausschneiden",
     "description": "Translation for common.cut"
@@ -1016,15 +1080,15 @@
     "description": "Translation for popup.features.block.desc"
   },
   "popup_footer_homepage": {
-    "message": "Startseite",
+    "message": "Offizielle Website des Originals",
     "description": "Translation for popup.footer.homepage"
   },
   "popup_footer_support": {
-    "message": "Unterstützen Sie mich mit 5 Sternen, wenn es Ihnen gefällt!",
+    "message": "Originalautor unterstützen: Original-Erweiterung bewerten",
     "description": "Translation for popup.footer.support"
   },
   "popup_footer_github": {
-    "message": "GitHub",
+    "message": "GitHub-Repository der erweiterten Version",
     "description": "Translation for popup.footer.github"
   },
   "system_closeEvent_notice": {
@@ -1032,12 +1096,24 @@
     "description": "Translation for system.closeEvent.notice"
   },
   "simulate_animated_heartTooltip": {
-    "message": "Wenn Ihnen das Plugin gefällt, geben Sie uns bitte eine 5-Sterne-Bewertung~",
+    "message": "Originalautor unterstützen: Original-Erweiterung bewerten",
     "description": "Translation for simulate.animated.heartTooltip"
   },
   "simulate_animated_githubTooltip": {
-    "message": "Wenn Ihnen das Plugin gefällt, schauen Sie sich gerne unser Github-Repository an~",
+    "message": "Repository der erweiterten Version ansehen",
     "description": "Translation for simulate.animated.githubTooltip"
+  },
+  "jsonViewer_tooltips_search": {
+    "message": "Suchen (Strg/Cmd + F)",
+    "description": "Translation for jsonViewer.tooltips.search"
+  },
+  "messageDetails_controls_horizontalLayout": {
+    "message": "Zu Links-/Rechts-Layout wechseln",
+    "description": "Translation for messageDetails.controls.horizontalLayout"
+  },
+  "messageDetails_controls_verticalLayout": {
+    "message": "Zu Oben-/Unten-Layout wechseln",
+    "description": "Translation for messageDetails.controls.verticalLayout"
   },
   "extensionName": {
     "message": "WebSocket DevTools",

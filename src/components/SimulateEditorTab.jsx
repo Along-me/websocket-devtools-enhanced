@@ -3,6 +3,7 @@ import JsonViewer from "./JsonViewer";
 import { CircleArrowDown, CircleArrowUp, Info, Github, Heart } from "lucide-react";
 import { Tooltip } from "@mantine/core";
 import { t } from "../utils/i18n";
+import { PROJECT_REPOSITORY, UPSTREAM_STORE } from "../utils/projectLinks.js";
 
 // Session storage key for tracking button state within current session
 const SESSION_BUTTONS_SHOWN_KEY = 'websocket-devtools-session-buttons-shown';
@@ -114,12 +115,12 @@ const SimulateEditorTab = ({
 
   const handleGithubClick = () => {
     markButtonsAsClicked();
-    chrome.tabs.create({ url: "https://github.com/law-chain-hot/websocket-devtools" });
+    chrome.tabs.create({ url: PROJECT_REPOSITORY });
   };
 
   const handleHeartClick = () => {
     markButtonsAsClicked();
-    chrome.tabs.create({ url: "https://chromewebstore.google.com/detail/websocket-devtools/fmnaobbfmjaaaebelkacpmmmpaaefbod" });
+    chrome.tabs.create({ url: UPSTREAM_STORE });
   };
 
   // Temporary debug function to reset all states

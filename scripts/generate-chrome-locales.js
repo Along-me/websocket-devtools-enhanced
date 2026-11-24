@@ -63,7 +63,12 @@ class I18nConverter {
 // Language mapping
 const localeMapping = {
   'en-us': 'en',
-  'zh-cn': 'zh_CN'
+  'zh-cn': 'zh_CN',
+  'zh-tw': 'zh_TW',
+  'ja': 'ja',
+  'ko': 'ko',
+  'de': 'de',
+  'fr': 'fr'
 };
 
 async function generateChromeLocales() {
@@ -132,4 +137,4 @@ async function generateChromeLocales() {
   }
 }
 
-generateChromeLocales(); 
+generateChromeLocales();

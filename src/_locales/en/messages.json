@@ -1088,15 +1088,15 @@
     "description": "Translation for popup.features.block.desc"
   },
   "popup_footer_homepage": {
-    "message": "HomePage",
+    "message": "Original website (support the original author)",
     "description": "Translation for popup.footer.homepage"
   },
   "popup_footer_support": {
-    "message": "Support me with 5 stars if you like it!",
+    "message": "Support the original author: rate the original extension",
     "description": "Translation for popup.footer.support"
   },
   "popup_footer_github": {
-    "message": "GitHub",
+    "message": "Enhanced-version GitHub repository",
     "description": "Translation for popup.footer.github"
   },
   "system_closeEvent_notice": {
@@ -1104,11 +1104,11 @@
     "description": "Translation for system.closeEvent.notice"
   },
   "simulate_animated_heartTooltip": {
-    "message": "If you like it, please give us a 5-star rating!",
+    "message": "Support the original author: rate the original extension",
     "description": "Translation for simulate.animated.heartTooltip"
   },
   "simulate_animated_githubTooltip": {
-    "message": "If you like it, try check out our Github repo!",
+    "message": "View the enhanced-version GitHub repository",
     "description": "Translation for simulate.animated.githubTooltip"
   },
   "panel_trafficPause_title": {

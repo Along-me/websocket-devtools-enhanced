@@ -1,5 +1,7 @@
 # Security Policy
 
+This repository contains the enhanced version maintained at [Along-me/websocket-devtools-enhanced](https://github.com/Along-me/websocket-devtools-enhanced). The reporting instructions below belong to the original project and its author, and apply to upstream vulnerabilities. They are not the enhanced-version maintainer's contact information.
+
 ## Supported Versions
 
 Security fixes target the latest published Chrome and Microsoft Edge extension versions and the current `main` branch.

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import i18n, { t, initForPopup } from "../utils/i18n.js";
+import { PROJECT_REPOSITORY, UPSTREAM_WEBSITE, UPSTREAM_STORE } from "../utils/projectLinks.js";
 import { Settings, Zap, Activity, Power, Wifi, MonitorSpeaker, MessageCircle, Send, Ban, SquareActivity, Home, Heart, Github } from "lucide-react";
 
 const extensionVersion = chrome.runtime.getManifest().version;
@@ -209,13 +210,13 @@ const Popup = () => {
 
           <div className="tooltip-container">
             <a 
-              href="https://chromewebstore.google.com/detail/websocket-devtools/fmnaobbfmjaaaebelkacpmmmpaaefbod" 
+              href={UPSTREAM_STORE}
               target="_blank" 
               className="footer-link"
               style={styles.footerLink}
               onClick={(e) => {
                 e.preventDefault();
-                chrome.tabs.create({ url: "https://chromewebstore.google.com/detail/websocket-devtools/fmnaobbfmjaaaebelkacpmmmpaaefbod" });
+                chrome.tabs.create({ url: UPSTREAM_STORE });
               }}
             >
               <Heart size={14} />
@@ -224,13 +225,13 @@ const Popup = () => {
           </div>
           <div className="tooltip-container">
             <a 
-              href="https://websocket-devtools.com" 
+              href={UPSTREAM_WEBSITE}
               target="_blank" 
               className="footer-link"
               style={styles.footerLink}
               onClick={(e) => {
                 e.preventDefault();
-                chrome.tabs.create({ url: "https://websocket-devtools.com" });
+                chrome.tabs.create({ url: UPSTREAM_WEBSITE });
               }}
             >
               <Home size={14} />
@@ -239,13 +240,13 @@ const Popup = () => {
           </div>
           <div className="tooltip-container">
             <a 
-              href="https://github.com/law-chain-hot/websocket-devtools" 
+              href={PROJECT_REPOSITORY}
               target="_blank" 
               className="footer-link"
               style={styles.footerLink}
               onClick={(e) => {
                 e.preventDefault();
-                chrome.tabs.create({ url: "https://github.com/law-chain-hot/websocket-devtools" });
+                chrome.tabs.create({ url: PROJECT_REPOSITORY });
               }}
             >
               <Github size={14} />

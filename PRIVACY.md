@@ -113,15 +113,17 @@ We may update this privacy policy to reflect changes in our practices or for leg
 ## Open Source Transparency
 
 WebSocket DevTools is open source. You can review our code at:
-- **GitHub Repository**: https://github.com/law-chain-hot/websocket-devtools
+- **Enhanced-version GitHub Repository**: https://github.com/Along-me/websocket-devtools-enhanced
+- **Original project (attribution)**: https://github.com/law-chain-hot/websocket-devtools
+- **Original author's website**: https://www.websocket-devtools.com/
 - **Code Audit**: All data processing logic is transparent and auditable
 
 ## Contact Information
 
 For privacy-related questions or concerns:
-- **Email**: ianloe666@gmail.com
-- **GitHub Issues**: https://github.com/law-chain-hot/websocket-devtools/issues
-- **Project Homepage**: https://github.com/law-chain-hot/websocket-devtools
+- **Enhanced-version GitHub Issues**: https://github.com/Along-me/websocket-devtools-enhanced/issues (do not include captured private messages or credentials)
+- **Project Homepage**: https://github.com/Along-me/websocket-devtools-enhanced
+- **Upstream contact**: Original author contact information applies to the original project, not maintenance of this enhanced version.
 
 ## Browser Compatibility
 

@@ -1,0 +1,20 @@
+.json-table-viewer { height: 100%; display: flex; flex-direction: column; min-height: 0; color: #d1d5db; font: 11px/1.5 system-ui, sans-serif; }
+.json-table-breadcrumbs, .json-table-tools, .json-table-pagination { display: flex; gap: 8px; align-items: center; padding: 6px 10px; flex-shrink: 0; }
+.json-table-breadcrumbs { flex-wrap: wrap; border-bottom: 1px solid #444; }
+.json-table-viewer button { cursor: pointer; color: #93c5fd; background: #333; border: 1px solid #555; border-radius: 3px; padding: 2px 6px; font: inherit; }
+.json-table-viewer button:disabled { opacity: .4; cursor: default; }
+.json-table-tools input { flex: 1; min-width: 50px; background: #222; color: #ddd; border: 1px solid #555; border-radius: 3px; padding: 4px 6px; font: inherit; }
+.json-table-scroll { overflow: auto; min-height: 0; flex: 1; }
+.json-table-scroll table { border-collapse: collapse; width: 100%; }
+.json-table-scroll td, .json-table-scroll th { text-align: left; padding: 5px 8px; border: 1px solid #414141; min-width: 65px; max-width: 300px; vertical-align: top; }
+.json-table-scroll thead th { position: sticky; top: 0; background: #333; z-index: 1; }
+.json-table-scroll tbody th { color: #a1a1aa; font-weight: normal; }
+.json-table-scalar { display: block; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 4.5em; overflow: hidden; }
+.json-table-scalar.string { color: #a5d6a7; }
+.json-table-scalar.number, .json-table-scalar.boolean { color: #e8b576; }
+.json-table-scalar.null { color: #a1a1aa; }
+.json-table-viewer .json-table-drill { display: flex; width: 100%; gap: 10px; justify-content: space-between; text-align: left; background: #29313b; }
+.json-table-drill span { max-width: 200px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.json-table-drill small { white-space: nowrap; }
+.json-table-pagination { justify-content: flex-end; }
+.json-table-empty { padding: 10px; color: #aaa; }

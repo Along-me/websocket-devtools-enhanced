@@ -1,3 +1,62 @@
+# WebSocket DevTools Enhanced
+
+Community enhancements based on **WebSocket DevTools** by **Brian Luo / law-chain-hot**. This repository contains a modified version of the upstream project; it is not an official upstream release.
+
+[简体中文说明](./README_zh-CN.md)
+
+## Support the original project
+
+The original author created the extension and its monitoring, simulation, interception, favorites, and DevTools integration. Please visit, star, and support the original project:
+
+- Original repository: **[law-chain-hot/websocket-devtools](https://github.com/law-chain-hot/websocket-devtools)**
+- Official website: **[www.websocket-devtools.com](https://www.websocket-devtools.com/)**
+
+**推荐大家支持原版。这个版本基于原作者的优秀工作，主要补充二进制消息查看、解析和 JSON 可读性方面的功能。**
+
+## What this version adds
+
+| Area | Enhancements |
+| --- | --- |
+| Binary messages | Hex dump with offsets and ASCII, UTF-8, Base64, raw Hex, captured byte counts, and binary downloads. Blob, ArrayBuffer, and typed-array payloads survive Chrome extension messaging. |
+| Global presentation | One selector controls message previews, details, and the JSON used for grouping. Search also matches decoded UTF-8 and protocol envelopes. |
+| Smart formatting | Extract JSON objects or arrays following binary protocol headers; expand nested JSON strings. Support relaxed JSON syntax such as comments, single quotes, unquoted keys, and trailing commas. |
+| Custom extraction | Skip a byte prefix and extract between literal start/end markers. Keep protocol prefixes/suffixes available separately without modifying captured bytes. |
+| JSON tables | Switch between code and tables. Preview nested values, click into a new level, return through breadcrumbs, search the current level, and paginate large arrays. |
+| Interface | Compact binary controls and translated editor search controls, including Chinese, while retaining the existing simulation, copy, favorites, wrap, and search tools. |
+
+Binary previews retain up to **100 KB per message**. Larger captures are marked as truncated, and downloads contain only the captured preview. Smart formatting helps inspect JSON-like payloads; it does not automatically understand every proprietary binary protocol.
+
+## Build and install this enhanced version
+
+Use Node.js **22.12 or newer** and pnpm **10**:
+
+```sh
+git clone https://github.com/Along-me/websocket-devtools-enhanced.git
+cd websocket-devtools-enhanced
+pnpm install --frozen-lockfile
+pnpm test
+pnpm i18n
+pnpm exec vite build
+```
+
+In Chrome (`chrome://extensions`) or Edge (`edge://extensions`), enable developer mode and load the generated `dist/` directory as an unpacked extension. After rebuilding, reload the extension, reopen DevTools, and refresh the inspected page.
+
+For binary protocol messages containing JSON, select **UTF-8 smart format** at the top of the message list. Leave extraction rules blank to try automatic extraction. Use **Table** in the detail toolbar to explore JSON by level.
+
+On Windows, package the built extension with PowerShell:
+
+```powershell
+Compress-Archive -Path ".\dist\*" -DestinationPath ".\websocket-devtools-enhanced.zip"
+```
+
+## License and attribution
+
+The original MIT license and Brian Luo's copyright notice are preserved in [LICENSE](./LICENSE). Original documentation and assets are retained below. The upstream store listings and upstream release links refer to the **original version**, which does not necessarily include this repository's enhancements.
+
+---
+
+## Original project documentation
+
 <div align="center">
 <img src="./ScreenShot/ScreenShot-long-quick-radius.png" alt="Main Interface" width="88%" style="border-radius: 8px;">
 </div>

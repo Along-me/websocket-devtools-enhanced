@@ -1,3 +1,62 @@
+# WebSocket DevTools 增强版
+
+基于 **Brian Luo / law-chain-hot** 开发的 **WebSocket DevTools** 进行的社区增强。本仓库是修改版，不是原作者的官方发布版本。
+
+## 推荐大家支持原版
+
+WebSocket 监控、消息模拟、流量拦截、收藏和 DevTools 集成等基础能力，均来自原作者的工作。欢迎大家优先了解原版，为原仓库点 Star，并支持原作者：
+
+- 原版仓库：**[law-chain-hot/websocket-devtools](https://github.com/law-chain-hot/websocket-devtools)**
+- 原版官网：**[www.websocket-devtools.com](https://www.websocket-devtools.com/)**
+
+**感谢原作者提供这个优秀的开源工具。这个版本主要围绕二进制消息查看、解析和 JSON 可读性做补充。**
+
+## 本版本新增了什么
+
+| 方向 | 增强内容 |
+| --- | --- |
+| 二进制消息查看 | 支持带偏移量和 ASCII 的 Hex、UTF-8、Base64、原始 Hex，显示字节数并下载二进制数据；补充 Blob、ArrayBuffer、类型化数组经过扩展通信后的字节保留。 |
+| 全局视图与搜索 | 顶部统一切换列表预览和详情的展示方式，分组读取同一套 JSON 结果；搜索也能匹配解码后的中文、UTF-8 文本和协议前后缀。 |
+| 智能格式化 | 从“二进制协议头 + 路径/方法 + JSON”中提取对象或数组，展开嵌套 JSON 字符串；兼容注释、单引号、未加引号的键和尾逗号等宽松语法。 |
+| 自定义提取规则 | 支持跳过前 N 字节、起始文本之后和结束文本之前的提取规则；协议前后缀可单独查看，原始捕获数据保持不变。 |
+| JSON 表格 | 代码与表格切换；嵌套值显示摘要，点击进入下一层，用面包屑返回；支持当前层搜索和大数组分页。 |
+| 界面体验 | 缩小二进制选择区域字号，补齐编辑器搜索栏的中文等语言翻译，保留模拟、复制、收藏、换行、搜索等原有工具。 |
+
+二进制预览每条最多保留 **100 KB**。超过限制会标注截断，下载也仅包含已捕获的预览字节。智能格式化用于辅助查看含 JSON 的消息，不代表能够自动识别所有私有二进制协议。
+
+## 构建并安装这个增强版
+
+需要 Node.js **22.12 或更新版本**和 pnpm **10**：
+
+```sh
+git clone https://github.com/Along-me/websocket-devtools-enhanced.git
+cd websocket-devtools-enhanced
+pnpm install --frozen-lockfile
+pnpm test
+pnpm i18n
+pnpm exec vite build
+```
+
+打开 Chrome 的 `chrome://extensions` 或 Edge 的 `edge://extensions`，开启开发者模式，点击“加载已解压的扩展程序”，选择构建生成的 `dist/` 文件夹。
+
+重新构建后，在扩展管理页面重新加载插件，重开 F12，并刷新被调试网页。
+
+查看包含 JSON 的二进制业务消息时，推荐将消息列表顶部的全局视图设为 **UTF-8 智能格式化**。自定义规则先留空，尝试自动识别。点击详情工具栏的“表格”可逐层查看 JSON。
+
+Windows 下可用 PowerShell 打包构建结果：
+
+```powershell
+Compress-Archive -Path ".\dist\*" -DestinationPath ".\websocket-devtools-enhanced.zip"
+```
+
+## 授权与来源
+
+保留原项目的 [MIT 许可证及 Brian Luo 的版权声明](./LICENSE)。下方保留原项目的文档和资源；其中的商店地址和原仓库 Release 链接指向**原版**，不代表包含本仓库新增的增强功能。
+
+---
+
+## 原项目文档
+
 <div align="center">
 <img src="./ScreenShot/ScreenShot-long-quick-radius.png" alt="主界面" width="88%" style="border-radius: 8px;">
 </div>
